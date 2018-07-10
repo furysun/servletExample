@@ -18,4 +18,18 @@
         <servlet-name>Controller</servlet-name>
         <url-pattern>/servlet</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>Filter</filter-name>
+        <filter-class>config.Filter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>Filter</filter-name>
+        <servlet-name>Controller</servlet-name>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>config.ContextListener</listener-class>
+    </listener>
 </web-app>

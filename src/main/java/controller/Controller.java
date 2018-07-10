@@ -9,6 +9,24 @@ import java.io.IOException;
 
 public class Controller extends HttpServlet {
     @Override
+    public void init() throws ServletException {
+        System.out.println("init ");
+        super.init();
+    }
+
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("service");
+        super.service(req, resp);
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("destroy");
+        super.destroy();
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("mr");
 
@@ -20,7 +38,7 @@ public class Controller extends HttpServlet {
 
         HttpSession session = req.getSession();
         session.setAttribute("name", login);
-        session.setAttribute("fam",fam);
+        session.setAttribute("fam", fam);
 
         resp.sendRedirect(req.getContextPath() + "/jsp/hello.jsp");
     }
