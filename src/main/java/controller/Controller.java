@@ -10,19 +10,19 @@ import java.io.IOException;
 public class Controller extends HttpServlet {
     @Override
     public void init() throws ServletException {
-        System.out.println("init ");
+//        System.out.println("init ");
         super.init();
     }
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("service");
+//        System.out.println("service");
         super.service(req, resp);
     }
 
     @Override
     public void destroy() {
-        System.out.println("destroy");
+//        System.out.println("destroy");
         super.destroy();
     }
 

@@ -19,15 +19,25 @@
         <url-pattern>/servlet</url-pattern>
     </servlet-mapping>
 
-    <filter>
-        <filter-name>Filter</filter-name>
-        <filter-class>config.Filter</filter-class>
-    </filter>
+    <servlet>
+        <servlet-name>CatController</servlet-name>
+        <servlet-class>controller.CatController</servlet-class>
+    </servlet>
 
-    <filter-mapping>
-        <filter-name>Filter</filter-name>
-        <servlet-name>Controller</servlet-name>
-    </filter-mapping>
+    <servlet-mapping>
+        <servlet-name>CatController</servlet-name>
+        <url-pattern>/cats</url-pattern>
+    </servlet-mapping>
+
+    <!--<filter>-->
+        <!--<filter-name>Filter</filter-name>-->
+        <!--<filter-class>config.Filter</filter-class>-->
+    <!--</filter>-->
+
+    <!--<filter-mapping>-->
+        <!--<filter-name>Filter</filter-name>-->
+        <!--<servlet-name>Controller</servlet-name>-->
+    <!--</filter-mapping>-->
 
     <listener>
         <listener-class>config.ContextListener</listener-class>
