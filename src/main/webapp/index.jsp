@@ -1,15 +1,17 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-
+    <c:set var="app" value="${pageContext.request.contextPath}"/>
 </head>
 <body>
-<form action="servlet" method="post">
-    login:
-    <input type="text" name="login"/>
-    <input type="text" name="Fam"/>
-    password:
-    <input type="password" name="password"/>
-    <input type="submit" value="ok"/>
+<form method="get" action="${app}/controller">
+    <input type="hidden" name="action" value="GO_TO_LOGIN">
+    <input type="submit" value="login"/>
+</form>
+
+<form method="get" action="${app}/controller">
+    <input type="hidden" name="action" value="GO_TO_REGISTRATION">
+    <input type="submit" value="Sing up"/>
 </form>
 
 </body>
