@@ -19,6 +19,16 @@
         <url-pattern>/controller</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>calcController</servlet-name>
+        <servlet-class>controller.CalcController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>calcController</servlet-name>
+        <url-pattern>/calc</url-pattern>
+    </servlet-mapping>
+
     <!--<filter>-->
         <!--<filter-name>Filter</filter-name>-->
         <!--<filter-class>config.Filter</filter-class>-->
