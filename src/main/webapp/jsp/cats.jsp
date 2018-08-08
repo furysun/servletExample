@@ -60,6 +60,5 @@ new cat:
         <input type="submit" value="ok"/>
     </form>
 </c:if>
-
 </body>
 </html>

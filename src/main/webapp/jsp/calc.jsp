@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core" %>
 
-    <c:set var="app" value="${pageContext.request.contextPath}"/>
+    <core:set var="app" value="${pageContext.request.contextPath}"/>
     <title>calc</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
     <input type="submit" name="result"/>
 </form>
 
-<c:out value="${result}"/>
+<core:out value="${result}"/>
 
 </body>
 </html>

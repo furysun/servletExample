@@ -29,6 +29,27 @@
         <url-pattern>/calc</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>clientController</servlet-name>
+        <servlet-class>controller.ClientController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>clientController</servlet-name>
+        <url-pattern>/client</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>peopleController</servlet-name>
+        <servlet-class>controller.PeopleController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>peopleController</servlet-name>
+        <url-pattern>/people</url-pattern>
+    </servlet-mapping>
+
     <!--<filter>-->
         <!--<filter-name>Filter</filter-name>-->
         <!--<filter-class>config.Filter</filter-class>-->
